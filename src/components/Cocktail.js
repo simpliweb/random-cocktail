@@ -1,31 +1,27 @@
-// import RandomCocktail from './RandomCocktail';
-import { useEffect } from 'react';
-
-
-// import axios from 'axios';
+import CocktailItem from './CocktailItem';
+import { useState } from 'react';
+import axios from 'axios';
 
 const Cocktail = () => {
 
-     useEffect( () => {
-        console.log ('side effect is running 🏃‍♀️')        
+    const [ cocktailData, setCocktailData ] = useState({});
 
-        const url = new URL('https://thecocktaildb.com/api/json/v1/1/random.php');
-        
-        url.search = new URLSearchParams({
-            name: 'strDrink',
-            image: 'strDrinkThumb',
-            instruction: 'strInstructions'            
+    const handleClick = () => {
+        axios({
+        url: "https://thecocktaildb.com/api/json/v1/1/random.php"  
+        })    
+        .then( (data) => {
+            console.log(data)
+            setCocktailData(data.data.drinks[0])
         })
-        
-        fetch(url)
-            .then( (response) => {
-                return response.json()
-            })
-            .then( (data) => {
-                console.log(data)
+    }
 
-            })
-    }, []);
+    return (
+        <>
+            <CocktailItem cocktailData={cocktailData}/>
+            <button className="randomButton" onClick= { handleClick } >Surprise Me</button>
+        </>
+    )
 }
 
 export default Cocktail;

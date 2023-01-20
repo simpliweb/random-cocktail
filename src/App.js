@@ -1,6 +1,6 @@
 import './App.css';
-import  Cocktail from './components/Cocktail';
 import Header from './components/Header';
+import  Cocktail from './components/Cocktail';
 
 
 function App() {
