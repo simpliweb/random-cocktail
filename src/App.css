@@ -6,3 +6,51 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+body {
+    background-color: rgb(255, 212, 223);
+}
+
+.title,
+.wrapper,
+.randomButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.title {
+    margin-top: 100px;
+}
+
+.randomButton {
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgb(121, 248, 231);
+    color: rgb(253, 6, 6);
+    font-weight: bold;
+}
+
+.cocktailInfo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.cocktailImageContainer {
+    width: 70%;
+}
+
+.cocktailImage {
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;    
+}
+
+.cocktailDetails {
+    margin-top: 0;
+    display: block;
+    width: 50%;
+}

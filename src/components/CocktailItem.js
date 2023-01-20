@@ -3,10 +3,10 @@ const CocktailItem = ( props ) => {
         return (
         <section className="wrapper">
             <div className="cocktailInfo">
-                <div> 
+                <div className="cocktailImageContainer"> 
                     <img className="cocktailImage" src= { props?.cocktailData?.strDrinkThumb } /> 
                 </div>
-                <div>
+                <div className="cocktailDetails">
                     <h2 className="cocktailName"> { props?.cocktailData?.strDrink } </h2>
                     <p className="cocktailInstructions"> { props?.cocktailData?.strInstructions }</p>
                 </div>                
