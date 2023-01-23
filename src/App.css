@@ -19,6 +19,10 @@ body {
     margin-top: 50px;
 }
 
+/* .wrapper {
+    position: relative;
+} */
+
 .title {
     margin-top: 100px;
 }
@@ -36,21 +40,43 @@ body {
     display: flex;
     justify-content: center;
     width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
 }
 
-.cocktailImageContainer {
-    width: 70%;
+.cocktailContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .cocktailImage {
     border-radius: 10px;
-    width: 350px;
-    height: 450px;    
+    height: 450px;  
 }
 
 .cocktailDetails {
     margin-top: 0;
     display: block;
     width: 50%;
+    margin-left: 20px;
+}
+
+.cocktailInstructions {
+    inline-size: 300px;
+}
+
+.cocktailTitle {
+    position: relative;
+    display: block;
+}
+
+.cocktailName {
+    margin-left: 40px;
+}
+
+.favorite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 0;
 }
