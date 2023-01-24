@@ -6,9 +6,58 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+.skipLink {
+    background-color: red;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    z-index: 999;   
+    border: 0;
+    font-weight: 700;
+}
+
+.skipLink:focus {
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
 body {
     background-color: rgb(255, 212, 223);
+    position: relative;
 }
+
+/* Cocktail.js --------- */
+
+.randomButton {
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgb(121, 248, 231);
+    color: rgb(253, 6, 6);
+    font-weight: bold;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center; 
+    padding-top: 10px;    
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+footer a:hover {
+    font-weight: 700;
+}
+
+/* CocktailItem.js ------ */
 
 .title,
 .wrapper,
@@ -19,21 +68,13 @@ body {
     margin-top: 50px;
 }
 
-/* .wrapper {
-    position: relative;
-} */
+.randomButton:hover {
+    cursor: pointer;
+    border: 2px solid red;
+}
 
 .title {
     margin-top: 100px;
-}
-
-.randomButton {
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: rgb(121, 248, 231);
-    color: rgb(253, 6, 6);
-    font-weight: bold;
 }
 
 .cocktailInfo {
@@ -64,8 +105,7 @@ body {
     inline-size: 300px;
 }
 
-.cocktailTitle {
-    position: relative;
+.cocktailTitle {    
     display: block;
 }
 
@@ -76,7 +116,42 @@ body {
 .favorite {
     position: absolute;
     top: 0;
-    left: 0;
+    font-size: 30px;
+    margin-left: 650px;
     background-color: transparent;
     border: 0;
+}
+
+.favorite:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* FavoriteCocktail.js ----- */
+.savedCocktail {
+    width: 100%;   
+}
+
+.savedCocktailContent {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: auto;
+    width: 300px;
+}
+
+.savedCocktailName {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.savedCocktailImage {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.savedCocktailInstructions {
+    inline-size: 200px;
+    height: 100px;
 }
