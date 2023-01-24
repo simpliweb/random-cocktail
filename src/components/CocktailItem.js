@@ -4,7 +4,7 @@ const CocktailItem = ( props ) => {
             <div className="cocktailContainer">              
                 <div className="cocktailInfo">
                     <div className="cocktailImageContainer"> 
-                        <img className="cocktailImage" src= { props?.cocktailData?.strDrinkThumb } alt = {`image of ${props?.cocktailData?.strDrinkThumb}`} /> 
+                        <img className="cocktailImage" src= { props?.cocktailData?.strDrinkThumb } alt = {`photo of ${props?.cocktailData?.strDrinkThumb}`} /> 
                     </div>
                     <div className="cocktailDetails">
                         <div className="cocktailTitle">

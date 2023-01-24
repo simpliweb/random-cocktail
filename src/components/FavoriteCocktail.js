@@ -51,7 +51,7 @@ const FavoriteCocktail = ( props ) => {
                     cocktails.map( (cocktail) => {
                             return <div className="savedCocktailContent">
                                     <h1 className="savedCocktailName"> {cocktail.title} </h1>
-                                    <img className="savedCocktailImage"src = {cocktail.image} alt = {`image of ${props?.cocktailData?.strDrinkThumb}`} />
+                                    <img className="savedCocktailImage"src = {cocktail.image} alt = {`photo of ${props?.cocktailData?.strDrinkThumb}`} />
                                     <p className=""> {cocktail.instructions} </p>
                                 </div>                          
                             })
