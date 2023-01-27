@@ -13,7 +13,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
     padding: 10px 0;
     position: absolute;
     left: -1000px;
-    top: auto;
+    top: 0;
     z-index: 999;   
     border: 0;
     font-weight: 700;
@@ -30,6 +30,23 @@ body {
     position: relative;
 }
 
+/* Header.js ----------- */
+
+header {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin: 0;
+}
+
+.instruction {
+    inline-size: 400px;
+    margin: 0 auto;
+    padding: 20px 0 0 20px;
+}
+
 /* Cocktail.js --------- */
 
 .randomButton {
@@ -44,7 +61,7 @@ body {
 footer {
     margin: 0 auto;
     text-align: center; 
-    padding-top: 10px;    
+    padding-top: 20px;    
 }
 
 footer a {
@@ -53,7 +70,7 @@ footer a {
     font-style: italic;
 }
 
-footer a:hover {
+footer a:hover:focus:active {
     font-weight: 700;
 }
 
@@ -65,16 +82,11 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .randomButton:hover {
     cursor: pointer;
     border: 2px solid red;
-}
-
-.title {
-    margin-top: 100px;
 }
 
 .cocktailInfo {
@@ -106,23 +118,22 @@ footer a:hover {
 }
 
 .cocktailTitle {    
-    display: block;
+    display: flex;
+    inline-size: 500px;
 }
 
 .cocktailName {
-    margin-left: 40px;
+    margin-left: 10px;
+    /* width: 100%; */
 }
 
-.favorite {
-    position: absolute;
-    top: 0;
+.favorite {    
     font-size: 30px;
-    margin-left: 650px;
     background-color: transparent;
     border: 0;
 }
 
-.favorite:hover {
+.favorite:hover:focus:active {
     color: red;
     cursor: pointer;
 }
