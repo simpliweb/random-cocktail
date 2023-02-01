@@ -124,7 +124,6 @@ footer a:hover:focus:active {
 
 .cocktailName {
     margin-left: 10px;
-    /* width: 100%; */
 }
 
 .favorite {    
@@ -133,7 +132,7 @@ footer a:hover:focus:active {
     border: 0;
 }
 
-.favorite:hover:focus:active {
+.favorite:hover, .favorite:active {
     color: red;
     cursor: pointer;
 }
@@ -141,6 +140,7 @@ footer a:hover:focus:active {
 /* FavoriteCocktail.js ----- */
 .savedCocktail {
     width: 100%;   
+    padding: 40px;
 }
 
 .savedCocktailContent {
@@ -153,8 +153,9 @@ footer a:hover:focus:active {
 }
 
 .savedCocktailName {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
+    inline-size: 350px;
 }
 
 .savedCocktailImage {
@@ -165,4 +166,31 @@ footer a:hover:focus:active {
 .savedCocktailInstructions {
     inline-size: 200px;
     height: 100px;
+}
+
+@media (max-width: 480px) {
+    .cocktailInfo {
+        width: 77%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cocktiailImageContainer {
+        display: block;
+    }
+    
+    .cocktailImage {
+        width: 400px;
+    }  
+    
+    .cocktailTitle {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .savedCocktailContent {
+        display: block;
+        margin: 0 auto;
+    }
 }

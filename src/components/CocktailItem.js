@@ -1,7 +1,7 @@
 import FavoriteButton from "./FavoriteButton";
 
-
-const CocktailItem = (props) => {    
+// display random cocktail item of image, title, and instruction
+const CocktailItem = (props) => {   
     return (
         <section className="wrapper">
             <div className="cocktailContainer">              
@@ -11,7 +11,7 @@ const CocktailItem = (props) => {
                     </div>
                     <div className="cocktailDetails">
                         <div className="cocktailTitle">
-                            <FavoriteButton />
+                            {props?.cocktailData?.strDrinkThumb && <FavoriteButton handleClick={props.handleClick} />}
                             <h2 className="cocktailName"> {props?.cocktailData?.strDrink} </h2>                              
                         </div>
                         <p className="cocktailInstructions"> {props?.cocktailData?.strInstructions}</p>

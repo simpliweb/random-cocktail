@@ -1,13 +1,10 @@
-// import FavoriteCocktail from './FavoriteCocktail';
-
+// FavoriteButton is the heart button to save favotie cocktail, onclick = handleClick to push current visible cocktail/title/instruction to save into the firebase
 const FavoriteButton = ({handleClick}) => {
     return (
         <>
-            {/* <div className="favoriteButtonContainer"> */}
-                <button className="favorite" onClick = {handleClick}>
+                <button className="favorite" onClick={handleClick}>
                     <i className="fa-regular fa-heart"></i>
                 </button>
-            {/* </div>           */}
         </>
     )
 }
