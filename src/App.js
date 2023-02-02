@@ -68,7 +68,7 @@ const App = () => {
       <CocktailItem cocktailData={cocktailData} handleClick={handleClick}/>
       <button className="randomButton" onClick={pressClick}>Surprise Me</button>
       <footer>
-          <a className="footer" href="https://junocollege.com/">Created at Juno</a>
+          <a className="footer" href="https://junocollege.com/">Created at Juno by Jie eun Lee</a>
       </footer>            
       <FavoriteCocktail handleClick={handleClick} cocktails={cocktails} />     
     </>

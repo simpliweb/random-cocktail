@@ -27,7 +27,8 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 body {
     background-color: rgb(255, 212, 223);
-    position: relative;
+    position: relative;   
+    font-family: 'Lato', sans-serif;
 }
 
 /* Header.js ----------- */
@@ -39,6 +40,8 @@ header {
 
 .title {
     margin: 0;
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
 }
 
 .instruction {
@@ -147,9 +150,11 @@ footer a:hover:focus:active {
     display: inline-grid;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    padding: 20px 180px;
+    margin: 50px;
     height: auto;
     width: 300px;
+    background-color: azure;
 }
 
 .savedCocktailName {
